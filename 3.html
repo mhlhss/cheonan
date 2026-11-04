@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eff8f8">
+  <meta name="description" content="천안시 직원 후생복지 향상 — 함께 일하고, 함께 웃는 행복한 일터">
+  <title>천안시 직원 후생복지 | 웹 프레젠테이션</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="#slide-1" aria-label="첫 슬라이드로 이동"><span class="brand-mark">C<span>♥</span></span><span class="brand-type"><strong>CHEONAN</strong><small>EMPLOYEE WELLBEING</small></span></a>
+      <nav class="desktop-nav" aria-label="슬라이드 선택" id="topNav"></nav>
+      <div class="header-actions"><span class="header-count" id="headerCount">01 <span>/ 10</span></span><button class="icon-btn" id="overviewBtn" type="button" aria-label="전체 슬라이드 보기" title="전체 슬라이드 보기"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></button></div>
+    </header>
+    <main id="presentation" aria-live="polite"></main>
+    <footer class="bottom-bar">
+      <div class="bottom-label">천안시 직원 후생복지 향상 <span class="help">· 방향키 / 스페이스 / 스와이프로 이동</span></div>
+      <div class="progress-track" aria-label="진행률"><div id="progressFill" class="progress-fill"></div></div>
+      <div class="controls"><button id="prevBtn" class="control" type="button" aria-label="이전 슬라이드"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18 9 12l6-6"/></svg><span>이전</span></button><button id="nextBtn" class="control primary" type="button" aria-label="다음 슬라이드"><span>다음</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
+    </footer>
+  </div>
+  <dialog id="overviewDialog" class="overview-dialog" aria-label="슬라이드 전체 목록"><div class="dialog-inner"><div class="dialog-head"><div><span class="overline">PRESENTATION OVERVIEW</span><h2>슬라이드 한눈에 보기</h2></div><button id="closeOverview" class="close-btn" type="button" aria-label="목록 닫기">✕</button></div><div class="overview-grid" id="overviewGrid"></div></div></dialog>
+  <noscript><p class="noscript">이 프레젠테이션을 보려면 브라우저의 JavaScript를 켜 주세요.</p></noscript>
+</body>
+</html>
